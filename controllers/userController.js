@@ -60,11 +60,6 @@ const logoutUser = asyncHandler(async(req,res)=>{
     res.status(200).json({message: 'User logged out successfully'});
 });
 
-export {
-    registerUser,
-    authUser,
-    logout
-};
 
 // get user details
 const getUserProfile = asyncHandler(async (req, res) => {
@@ -101,9 +96,9 @@ const updateUserProfile = asyncHandler(async (req, res) => {
 });
 
 export {
-    authUser,
     registerUser,
+    authUser,
     logoutUser,
     getUserProfile,
     updateUserProfile
-};
+}
